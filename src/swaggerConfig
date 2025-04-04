@@ -1,0 +1,21 @@
+const swaggerJsdoc = require('swagger-jsdoc'); //gera a documentação da API
+const swaggerUi = require('swagger-ui-express'); //possibilita uma parte mais visual da aplicação
+
+const options = {
+    definition: {
+        openapi: '3.0.0',
+        info: {
+            title: 'User',
+            version: '1.0.0',
+            description: 'API de gerenciamento de usuários',
+        },
+    },
+    apis: ['./src/routes/*.js'], // Caminho para as rotas
+};
+
+const specs = swaggerJsdoc(options); //é o que gera a documentação
+
+module.exports = {
+    swaggerUi,
+    specs,
+};

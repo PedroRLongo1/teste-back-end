@@ -1,0 +1,10 @@
+[x]/adapters
+[x]/controllers
+[x]/middlewares
+[x]/models
+[ ]/routes
+[x]_database.js
+[ ]_database.sqlite
+[ ]_sequelize.sqlite
+[x]_server.js
+[ ]_swaggerConfig.js
